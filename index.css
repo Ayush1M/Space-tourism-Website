@@ -36,7 +36,7 @@
     }
 }
 
-@media (min-width: 45em){
+@media (min-width: 55em){
     :root{
         --fs-800 : 6.25rem;
         --fs-700 : 3.5rem;
@@ -154,17 +154,17 @@ select{
    text-align: center;
    place-items: center;
    row-gap: 20%;
-   padding-inline: 2rem;
+   padding-inline: 1rem;
 }
 
 .grid-container *{
-    max-width: 50ch;
+    max-width: 70ch;
 }
 
-@media(min-width: 45em){
+@media(min-width: 55em){
     .grid-container{
-        column-gap: var(--container-gap, 2rem);
-        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40em)) minmax(1rem, 1fr);
+        column-gap: var(--container-gap, 1rem);
+        grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 50em)) minmax(2rem, 1fr);
     }
     .grid-container > *:first-child{
         grid-column: 2;
@@ -175,8 +175,8 @@ select{
     }
 
     .grid-container--home{
-        padding-bottom: 8rem;
-        align-items: end;
+        padding-bottom: 1rem;
+        align-items: center;
     }
 }
 
@@ -337,6 +337,15 @@ select{
     transform: scale(1.5);
 }
 
+.logo{
+    margin:1rem clamp(1.5rem, 5vw, 3rem);
+}
+
+.primary-header{
+    justify-content: space-between;
+    align-items: center;
+}
+
 .primary-navigation{
     --underline-gap: 2rem;
     list-style: none;
@@ -350,6 +359,15 @@ select{
     display: none;
 }
 
+.primary-navigation a{
+    text-decoration: none;
+}
+
+.primary-navigation a > span{
+    font-weight: 700;
+    margin-right: .5em;
+}
+
 @media(max-width:35em){
     .primary-navigation{
         --underline-gap: .8rem;
@@ -361,6 +379,7 @@ select{
         padding: min(20rem, 10vh) 2rem;
         margin: 0;
         transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
     }
 
     .primary-navigation.underline-indicators > .active{
@@ -385,15 +404,20 @@ select{
         background-repeat: no-repeat;
         cursor: pointer;
     }
+
+    .mobile-nav-toggle[aria-expanded = 'true']{
+        background-image: url(assets/shared/icon-close.svg);
+    }
 }
 
-.primary-navigation a{
-    text-decoration: none;
-}
+@media(min-width:35em) and (max-width: 55em){
+    .primary-navigation{
+        padding-inline: 3rem;
+    }
 
-.primary-navigation a > span{
-    font-weight: 700;
-    margin-right: .5em;
+    .primary-navigation a > span{
+        display: none;
+    }
 }
 
 .underline-indicators > *{
@@ -452,7 +476,7 @@ body{
     }
 }
 
-@media(min-width:45em){
+@media(min-width:55em){
     .home{
        background-image: url(assets/home/background-home-desktop.jpg);
     }
