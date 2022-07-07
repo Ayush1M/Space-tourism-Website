@@ -10,10 +10,10 @@
 
     /* font sizes */
 
-    --fs-900 : clamp(5rem, 8vw + 1rem ,9.375rem) ;
-    --fs-800 : 6.25rem;
-    --fs-700 : 3.5rem;
-    --fs-600 : 2rem;
+    --fs-900 : clamp(3rem, 8vw + 2rem ,9.375rem) ;
+    --fs-800 : 5rem;
+    --fs-700 : 2rem;
+    --fs-600 : 1.5rem;
     --fs-500 : 1rem;
     --fs-400 : 1.125rem;
     --fs-300 : 1rem;
@@ -29,15 +29,14 @@
 @media(min-width: 35em){
     :root{
         --fs-900 : 9.375rem;
-        --fs-800 : 5rem;
+        --fs-800 : 5.5rem;
         --fs-700 : 2.5rem;
-        --fs-600 : 1.5rem;
+        --fs-600 : 1.75rem;
         --fs-500 : 1.25rem;
-        --fs-400 : 1rem;
     }
 }
 
-@media (min-width: 55em){
+@media (min-width: 48em){
     :root{
         --fs-800 : 6.25rem;
         --fs-700 : 3.5rem;
@@ -138,7 +137,6 @@ select{
 
 .d-block{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -244,7 +242,7 @@ select{
 
 .fs-800{
     font-size: var(--fs-800);
- }
+}
 
 .fs-700{
     font-size: var(--fs-700);
@@ -324,7 +322,7 @@ select{
 }
 
 .mobile-size{
-    max-width: 40ch;
+    max-width: 50ch;
 }
 
 .logo{
@@ -370,7 +368,7 @@ select{
         padding: min(20rem, 10vh) 2rem;
         margin: 0;
         transform: translateX(100%);
-        transition: transform 500ms ease-in-out;
+        transition: transform ease-in-out;
     }
 
     .primary-navigation.underline-indicators > .active{
@@ -403,17 +401,17 @@ select{
 
 @media(min-width: 35em){
     .primary-navigation{
-        padding-inline: clamp(2rem, 10vw, 6rem);
+        padding-inline: clamp(2rem, 10vw, 2.5rem);
     }
 }
 
-@media(min-width:35em) and (max-width: 55em){
+@media(min-width:35em) and (max-width: 48em){
     .primary-navigation a > span{
         display: none;
     }
 }
 
-@media(min-width: 55em){
+@media(min-width: 48em){
     .primary-header::after{
         content: '';
         display: block;
@@ -522,7 +520,7 @@ body{
     }
 }
 
-@media(min-width:55em){
+@media(min-width:48em){
     .home{
        background-image: url(assets/home/background-home-desktop.jpg);
     }
@@ -540,7 +538,7 @@ body{
     }
 }
 
-@media(min-width:55em){
+@media(min-width:48em){
     .destination{
        background-image: url(assets/destination/background-destination-desktop.jpg);
     }
@@ -559,7 +557,7 @@ body{
     }
 }
 
-@media(min-width:55em){
+@media(min-width:48em){
     .crew{
        background-image: url(assets/crew/background-crew-desktop.jpg);
     }
@@ -572,13 +570,13 @@ body{
 }
 
 @media(min-width:35em){
-    .crew{
+    .technology{
         background-image: url(assets/technology/background-technology-tablet.jpg);
     }
 }
 
-@media(min-width:55em){
-    .crew{
+@media(min-width:48em){
+    .technology{
        background-image: url(assets/technology/background-technology-desktop.jpg);
     }
 }
@@ -586,10 +584,15 @@ body{
 
 .grid-container{
     display: grid;
-    text-align: center;
     place-items: center;
+    text-align: center;
     row-gap: 10%;
     padding-inline: 1rem;
+    padding-bottom: 4rem;
+}
+
+.d-block{
+    justify-content: center;
 }
 
 .grid-container--destination,
@@ -597,10 +600,6 @@ body{
     row-gap: 5%;
 }
 
-.grid-container--technology{
-    padding-inline: 0;
-}
- 
 .numbered-title{
     grid-area: title;
 }
@@ -619,6 +618,7 @@ body{
 .grid-container--destination > picture{
     grid-area: image;
     max-width: 60%;
+    align-self: flex-start;
 }
 
 .grid-container--destination > .tab-list{
@@ -675,6 +675,10 @@ body{
     padding-bottom: 1.5rem;
 }
 
+.mobile-size-one{
+    max-width: 55ch;
+}
+
 
 /*-----technology------ */
 
@@ -686,6 +690,14 @@ body{
         'content';
 }
 
+.grid-container--technology{
+    padding-inline: 0;
+}
+
+.technology-info{
+    padding-inline: 2rem;
+}
+
 .grid-container--technology > picture{
     grid-area: image;
 }
@@ -694,7 +706,7 @@ body{
     grid-area: tabs;
 }
 
-.grid-container--technology > .crew-info{
+.grid-container--technology > .technology-info{
     grid-area: content;
 }
 
@@ -726,11 +738,18 @@ body{
     }
 }
  
-@media(min-width: 55em){
-    .grid-container{
+@media(min-width:48em){
+    .grid-container--crew,
+    .grid-container--destination,
+    .grid-container--technology{
         column-gap: var(--container-gap, 1rem);
-        grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 50em)) minmax(2rem, 1fr);
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 50em)) minmax(1rem, 1fr);
     }
+ 
+    .grid-container--home{
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40em)) minmax(1rem, 1fr);
+    }
+    
 
     .grid-container--home > *:first-child{
         grid-column: 2;
@@ -742,10 +761,18 @@ body{
  
     .grid-container--home{
         padding-bottom: 1rem;
-        align-items: center;
+    }
+
+    .grid-container--home,
+    .grid-container--crew,
+    .grid-container--destination,
+    .grid-container--technology{
+        text-align: left;
     }
 
     .grid-container--destination{
+        justify-items: start;
+        align-content: flex-start;
         grid-template-areas: 
             '. title title .'
             '. image tabs .'
@@ -757,9 +784,7 @@ body{
         text-align: left;
     }
 
-    .grid-container--destination > picture,
-    .grid-container--crew > picture,
-    .grid-container--technology > picture{
+    .grid-container--destination > picture{
         max-width: 90%;
     }
 
@@ -769,10 +794,16 @@ body{
     }
 
     .grid-container--crew{
+        justify-items: start;
         grid-template-areas: 
             '. title title .'
             '. content image .'
             '. tabs image .';
+    }
+
+    .grid-container--crew > picture{
+        max-width: 70%;
+        grid-column: span 2;
     }
 
     .dot-indicators{
@@ -785,5 +816,31 @@ body{
 
     .space-small{
         padding-bottom: 2rem;
+    }
+
+    .grid-container--technology{
+        justify-content: flex-end;
+        grid-template-areas: 
+            'title title title .'
+            'tabs content image .'
+            'tabs content image .';
+    }
+
+    .numbered-indicators{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .numbered-indicators,
+    .numbered-title{
+        padding-inline: 1.4rem;
+    }
+
+    .grid-container--technology{
+        padding-inline: 0;
+    }
+
+    .grid-container--technology > picture{
+        min-width: 200px;
     }
 }
