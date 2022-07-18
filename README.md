@@ -12,6 +12,7 @@
 This project is based to take you on a Space travel Journey and to explore different plannets with different technologies. This website is fully responsive and made with HTML, CSS and Javascript.
 
 ## Challenges
+* The first challenge I faced is with styling of the project as doing simple styling with CSS wil be time consuming and code will become really difficult to         understand. To overcome this problem I created a design system for every page using custom properties which made it so much easy to add each properties as Classes.
 
 ## Screenshot
 
