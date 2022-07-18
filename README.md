@@ -8,7 +8,7 @@
  * [What I Learned](#what-i-learned)
 
 # Overview of the Project
-This is a battle game between wizard and demons using the concepts of vanilla JS.
+This project is based to take you on a Space travel Journey and to explore different plannets with different technologies. This website is fully responsive and made with HTML, CSS and Javascript.
 
 ## Screenshot
 
