@@ -3,12 +3,15 @@
 ## Table of Content
 
  * [Overview of the Project](#overview-of-the-project)
+ * [Challenges](#challenges)
       * [Screenshot](#screenshot)
  * [Technologies I Used](#technologies-i-used)
  * [What I Learned](#what-i-learned)
 
 # Overview of the Project
 This project is based to take you on a Space travel Journey and to explore different plannets with different technologies. This website is fully responsive and made with HTML, CSS and Javascript.
+
+## Challenges
 
 ## Screenshot
 
