@@ -16,7 +16,7 @@ This project is based to take you on a Space travel Journey and to explore diffe
 ## Technologies I Used
 * Semantic HTML5
 * CSS
-* Vanilla Javascript
+* Javascript
 
 ## What I Learned
 * Learned about DOM.
