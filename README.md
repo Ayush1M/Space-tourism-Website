@@ -28,16 +28,4 @@ This project is based to take you on a Space travel Journey and to explore diffe
 * Javascript
 
 ## What I Learned
-* Learned about DOM.
-* Learned about map method.
-* Learned about join method which act as a sperator.
-* Learned how to return a function inside a function.
-* Learned about fill method.
-* Learned about constructor functions.
-* Learned about this keyword.
-* Learned how to import/export to handle the data in a more clean way.
-* Learned about object.assign
-* Learned about reduce method.
-* Learned about ternary operators.
-* Learned about arrow functions.
-* Learned about setTimeout method.
+* Learned about custom properties in CSS.
