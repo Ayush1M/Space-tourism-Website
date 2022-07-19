@@ -29,3 +29,6 @@ This project is based to take you on a Space travel Journey and to explore diffe
 
 ## What I Learned
 * Learned about custom properties in CSS.
+* Learned How to create a design system for easy styling.
+* Learned How to link different tabs in a page using Javascript.
+* Learned How to use different type of attribute elements.
