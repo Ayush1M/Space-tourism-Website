@@ -432,7 +432,7 @@ select{
     }
 
     .large-button{
-        margin-left: 6rem;
+        margin-left: 10rem;
     }
 }
 
@@ -776,6 +776,7 @@ body{
  
     .grid-container--home{
         padding-bottom: 1rem;
+        padding-inline: 5rem;
     }
 
     .grid-container--home,
