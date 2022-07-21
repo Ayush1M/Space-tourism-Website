@@ -590,9 +590,8 @@ body{
     display: grid;
     place-items: center;
     text-align: center;
-    row-gap: 10%;
+    row-gap: 5%;
     padding-inline: 1rem;
-    padding-bottom: 4rem;
 }
 
 .d-block{
@@ -700,6 +699,7 @@ body{
 
 .grid-container--technology{
     padding-inline: 0;
+    padding-bottom: 4rem;
 }
 
 .technology-info{
@@ -776,7 +776,6 @@ body{
  
     .grid-container--home{
         padding-bottom: 1rem;
-        margin-left: 4rem;
     }
 
     .grid-container--home,
@@ -810,7 +809,6 @@ body{
     }
 
     .grid-container--crew{
-        justify-items: start;
         grid-template-areas: 
             '. title title .'
             '. content image .'
@@ -818,8 +816,7 @@ body{
     }
 
     .grid-container--crew > picture{
-        max-width: 70%;
-        grid-column: span 2;
+        width: 80%;
     }
 
     .dot-indicators{
