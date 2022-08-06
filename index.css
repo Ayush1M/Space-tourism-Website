@@ -368,7 +368,7 @@ select{
         padding: min(20rem, 10vh) 2rem;
         margin: 0;
         transform: translateX(100%);
-        transition: transform ease-in-out;
+        transition: transform 250ms ease-in-out;
     }
 
     .primary-navigation.underline-indicators > .active{
