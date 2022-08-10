@@ -21,6 +21,7 @@ This project is based to take you on a Space travel Journey and to explore diffe
 
 ## Screenshot
 
+![](./assets/space-travel-website.png)
 
 ## Technologies I Used
 * Semantic HTML5
