@@ -7,7 +7,6 @@
       * [Screenshot](#screenshot)
  * [Technologies I Used](#technologies-i-used)
  * [What I Learned](#what-i-learned)
- * [Acknowledgment](#acknowledgment)
 
 # Overview of the Project
 This project is based to take you on a Space travel Journey and to explore different plannets and learn about space. This website is fully responsive and made with HTML, CSS and Javascript.
@@ -34,5 +33,3 @@ This project is based to take you on a Space travel Journey and to explore diffe
 * Learned How to create a design system for easy styling.
 * Learned How to link different tabs in a page using Javascript.
 * Learned How to use different type of attribute elements.
-
-## Acknowledgment
